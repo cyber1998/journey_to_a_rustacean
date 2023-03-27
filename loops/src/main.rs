@@ -1,8 +1,21 @@
 fn main() {
+    
+    //WHILE LOOPS
+    println!("WHILE LOOP");
+    let mut a: i8 = 1;
+    while a < 50 {
+        println!("{}", a);
+        a += 1;
+    }
+    println!("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    
+    // FOR LOOPS
+    println!("FOR LOOP");
     // Simple integer loops
     let lower_limit: i8 = 1;
     let upper_limit: i8 = 100;
     let range: core::ops::Range<i8> = lower_limit..upper_limit;
+
     for i in range {
         println!("{}", i);
     }
